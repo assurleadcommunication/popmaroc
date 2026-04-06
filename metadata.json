@@ -1,0 +1,7 @@
+{
+  "name": "Maison de l'Artisanat - Boutique Premium Marocaine",
+  "description": "Découvrez l'excellence de l'artisanat marocain : décoration haut de gamme, tapis Beni Ouarain, mobilier en cuir et art de la table. Livraison express au Maroc et paiement à la livraison.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
