@@ -83,7 +83,7 @@ export const PRODUCTS: Product[] = [
     name: "Pouf en Cuir Majorelle",
     category: "decor",
     price: 650,
-    image: "https://images.unsplash.com/photo-1512418490979-92798ccc1380?auto=format&fit=crop&q=80&w=800",
+    image: "ChatGPT Image 29 avr. 2026, 22_49_12.png",
     description: "Pouf en cuir véritable teinté au bleu Majorelle emblématique.",
     rating: 4.6,
     reviews: 78,
