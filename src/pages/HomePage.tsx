@@ -81,7 +81,7 @@ export default function HomePage() {
               <img 
                 src="ChatGPT Image 29 avr. 2026, 22_49_12.png" 
                 alt="Pop Maroc Hero" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-morocco-blue/10 mix-blend-overlay" />
