@@ -57,7 +57,7 @@ export default function HomePage() {
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map(i => (
                   <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-morocco-sand">
-                    <img src={`ChatGPT Image 29 avr. 2026, 22_49_12.png`} alt="User" />
+                    <img src={`https://i.pravatar.cc/150?u=${i}`} alt="User" />
                   </div>
                 ))}
               </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
           >
             <div className="relative z-10 aspect-square rounded-none border-8 border-morocco-blue shadow-[24px_24px_0px_0px_rgba(255,0,255,1)] overflow-hidden bg-white">
               <img 
-                src="ChatGPT Image 29 avr. 2026, 22_49_12.png" 
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=1000" 
                 alt="Pop Maroc Hero" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
@@ -180,7 +180,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link to="/shop?category=leather" className="group relative aspect-[4/5] overflow-hidden border-4 border-morocco-blue shadow-[8px_8px_0px_0px_rgba(255,0,255,1)]">
-              <img src="ChatGPT Image 29 avr. 2026, 22_49_12.png" alt="Cuir" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800" alt="Cuir" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
               <div className="absolute inset-0 bg-morocco-blue/20 group-hover:bg-transparent transition-all" />
               <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-morocco-blue to-transparent">
                 <h3 className="text-3xl font-display font-black text-white uppercase tracking-tighter">Cuir</h3>
@@ -188,7 +188,7 @@ export default function HomePage() {
               </div>
             </Link>
             <Link to="/shop?category=ceramics" className="group relative aspect-[4/5] overflow-hidden border-4 border-morocco-blue shadow-[8px_8px_0px_0px_rgba(152,255,152,1)] lg:mt-12">
-              <img src="ChatGPT Image 29 avr. 2026, 22_49_12.png" alt="Céramique" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
+              <img src="https://images.unsplash.com/photo-1590732488572-cf3252b17427?auto=format&fit=crop&q=80&w=800" alt="Céramique" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
               <div className="absolute inset-0 bg-morocco-blue/20 group-hover:bg-transparent transition-all" />
               <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-morocco-blue to-transparent">
                 <h3 className="text-3xl font-display font-black text-white uppercase tracking-tighter">Céramique</h3>
@@ -196,7 +196,7 @@ export default function HomePage() {
               </div>
             </Link>
             <Link to="/shop?category=rugs" className="group relative aspect-[4/5] overflow-hidden border-4 border-morocco-blue shadow-[8px_8px_0px_0px_rgba(244,196,48,1)]">
-              <img src="ChatGPT Image 29 avr. 2026, 22_49_12.png" alt="Tapis" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
+              <img src="https://images.unsplash.com/photo-1579656335332-d39812c75f82?auto=format&fit=crop&q=80&w=800" alt="Tapis" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
               <div className="absolute inset-0 bg-morocco-blue/20 group-hover:bg-transparent transition-all" />
               <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-morocco-blue to-transparent">
                 <h3 className="text-3xl font-display font-black text-white uppercase tracking-tighter">Tapis</h3>
@@ -204,7 +204,7 @@ export default function HomePage() {
               </div>
             </Link>
             <Link to="/shop?category=beauty" className="group relative aspect-[4/5] overflow-hidden border-4 border-morocco-blue shadow-[8px_8px_0px_0px_rgba(255,0,255,1)] lg:mt-12">
-              <img src="ChatGPT Image 29 avr. 2026, 22_49_12.png" alt="Beauté" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
+              <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800" alt="Beauté" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
               <div className="absolute inset-0 bg-morocco-blue/20 group-hover:bg-transparent transition-all" />
               <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-morocco-blue to-transparent">
                 <h3 className="text-3xl font-display font-black text-white uppercase tracking-tighter">Beauté</h3>
