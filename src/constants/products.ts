@@ -104,6 +104,20 @@ export const PRODUCTS: Product[] = [
     colors: ["#D4AF37", "#FF00FF"],
     sizes: ["S", "M", "L"]
   },
+  {
+    id: 7,
+    name: "Petit Sac Croco Chic",
+    category: "leather",
+    price: 140,
+    image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&q=80&w=800",
+    description: "L'élégance et la praticité réunies dans ce petit sac à texture crocodile blanche. Un accessoire chic avec finitions soignées et fermeture sécurisée pour un look raffiné au quotidien.",
+    rating: 4.8,
+    reviews: 56,
+    stock: 25,
+    colors: ["#FFFFFF"],
+    sizes: ["Taille Unique"],
+    isNew: true
+  },
 ];
 
 export const ALL_PRODUCTS = [...PRODUCTS];
