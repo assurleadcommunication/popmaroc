@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80&w=2000" 
+          src="ChatGPT Image 29 avr. 2026, 22_49_12.png" 
           alt="Moroccan Craftsmanship"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
