@@ -57,7 +57,7 @@ export default function HomePage() {
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map(i => (
                   <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-morocco-sand">
-                    <img src={`https://i.pravatar.cc/150?u=${i}`} alt="User" />
+                    <img src={`ChatGPT Image 29 avr. 2026, 22_49_12.png`} alt="User" />
                   </div>
                 ))}
               </div>
