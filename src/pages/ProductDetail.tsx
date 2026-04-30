@@ -62,7 +62,7 @@ export default function ProductDetail() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  src={productImages[selectedImage]} 
+                  src={19d8997e-42da-4743-a75b-bf1c757a6e2c.png} 
                   alt={product.name} 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                   referrerPolicy="no-referrer"
@@ -94,7 +94,7 @@ export default function ProductDetail() {
                     onClick={() => setSelectedImage(i)}
                     className={`aspect-square bg-white border-4 transition-all overflow-hidden ${selectedImage === i ? 'border-morocco-fuchsia shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] scale-105' : 'border-morocco-blue/20 hover:border-morocco-blue'}`}
                   >
-                    <img src={img} alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" referrerPolicy="no-referrer" />
+                    <img src={19d8997e-42da-4743-a75b-bf1c757a6e2c.png} alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" referrerPolicy="no-referrer" />
                   </button>
                 ))}
               </div>
