@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     name: "Sac Babouche Pop",
     category: "leather",
     price: 850,
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800",
+    image: "d0076ed9-b814-411d-b0c8-1f8f607559f3.png",
     description: "Un sac en cuir traditionnel réinterprété avec des couleurs vives et des motifs pop.",
     rating: 4.8,
     reviews: 124,
