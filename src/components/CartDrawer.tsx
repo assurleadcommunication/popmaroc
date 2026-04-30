@@ -65,7 +65,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                 cart.map((item) => (
                   <div key={item.id} className="flex gap-6 group">
                     <div className="w-24 h-32 bg-morocco-sand border-2 border-morocco-blue overflow-hidden shrink-0 shadow-[4px_4px_0px_0px_rgba(0,56,168,0.2)]">
-                      <img src={item.image} alt={item.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                      <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-all duration-500" />
                     </div>
                     <div className="flex-1 space-y-2">
                       <div className="flex justify-between items-start">

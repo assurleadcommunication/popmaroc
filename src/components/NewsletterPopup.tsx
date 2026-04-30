@@ -42,7 +42,7 @@ export default function NewsletterPopup() {
               <img 
                 src="https://images.unsplash.com/photo-1590732488572-cf3252b17427?auto=format&fit=crop&q=80&w=800" 
                 alt="Newsletter Pop" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full h-full object-cover transition-all duration-1000"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 zellige-pattern opacity-10" />

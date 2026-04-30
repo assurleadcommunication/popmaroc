@@ -96,11 +96,11 @@ export default function Checkout() {
           <span className="text-morocco-blue">Paiement</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          <div className="lg:col-span-7 space-y-12">
-            <div className="space-y-4">
-              <span className="text-morocco-fuchsia font-black uppercase tracking-[0.3em] text-xs">Finalisation</span>
-              <h1 className="text-5xl md:text-7xl font-display font-black text-morocco-blue uppercase tracking-tighter leading-none">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div className="lg:col-span-7 space-y-8 lg:space-y-12">
+            <div className="space-y-2 lg:space-y-4">
+              <span className="text-morocco-fuchsia font-black uppercase tracking-[0.3em] text-[10px] lg:text-xs">Finalisation</span>
+              <h1 className="text-4xl md:text-7xl font-display font-black text-morocco-blue uppercase tracking-tighter leading-none">
                 Paiement <br />
                 <span className="text-morocco-fuchsia neon-text">Sécurisé</span>
               </h1>
@@ -229,15 +229,15 @@ export default function Checkout() {
           </div>
 
           {/* Order Summary */}
-          <aside className="lg:col-span-5 space-y-8 sticky top-32">
-            <div className="bg-white p-10 border-4 border-morocco-blue shadow-[12px_12px_0px_0px_rgba(0,56,168,1)]">
-              <h2 className="text-3xl font-display font-black text-morocco-blue uppercase tracking-tighter mb-10 pb-6 border-b-4 border-morocco-sand">Résumé de la commande</h2>
-              
-              <div className="space-y-8 mb-10 max-h-[400px] overflow-y-auto pr-4">
+            <aside className="lg:col-span-5 space-y-8 lg:sticky lg:top-32">
+              <div className="bg-white p-6 md:p-10 border-4 border-morocco-blue shadow-[8px_8px_0px_0px_rgba(0,56,168,1)] md:shadow-[12px_12px_0px_0px_rgba(0,56,168,1)]">
+                <h2 className="text-2xl md:text-3xl font-display font-black text-morocco-blue uppercase tracking-tighter mb-8 md:mb-10 pb-4 md:pb-6 border-b-2 md:border-b-4 border-morocco-sand">Résumé de la commande</h2>
+                
+                <div className="space-y-6 md:space-y-8 mb-8 md:mb-10 max-h-[300px] md:max-h-[400px] overflow-y-auto pr-2 md:pr-4">
                 {cart.map((item) => (
                   <div key={item.id} className="flex gap-6">
                     <div className="w-20 h-24 bg-morocco-sand border-2 border-morocco-blue shrink-0 overflow-hidden">
-                      <img src={item.image} alt={item.name} className="w-full h-full object-cover grayscale" />
+                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1 space-y-1">
                       <h3 className="text-sm font-display font-black text-morocco-blue uppercase tracking-tighter leading-tight">{item.name}</h3>

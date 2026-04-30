@@ -34,7 +34,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <img 
           src={product.image} 
           alt={product.name} 
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+          className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
           referrerPolicy="no-referrer"
         />
         
@@ -51,8 +51,11 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Quick Actions */}
-        <div className="absolute top-4 right-4 flex flex-col gap-2 translate-x-12 group-hover:translate-x-0 transition-transform duration-500">
-          <button className="w-10 h-10 bg-white border-2 border-morocco-blue flex items-center justify-center hover:bg-morocco-fuchsia hover:text-white transition-all shadow-[2px_2px_0px_0px_rgba(0,56,168,1)]">
+        <div className="absolute top-4 right-4 flex flex-col gap-2 lg:translate-x-12 lg:group-hover:translate-x-0 transition-transform duration-500">
+          <button 
+            aria-label="Ajouter aux favoris"
+            className="w-10 h-10 bg-white border-2 border-morocco-blue flex items-center justify-center hover:bg-morocco-fuchsia hover:text-white transition-all shadow-[2px_2px_0px_0px_rgba(0,56,168,1)]"
+          >
             <Heart className="w-5 h-5" />
           </button>
           <button 
@@ -60,14 +63,15 @@ export default function ProductCard({ product }: ProductCardProps) {
               e.preventDefault();
               addToCart(product);
             }}
+            aria-label="Ajouter au panier"
             className="w-10 h-10 bg-white border-2 border-morocco-blue flex items-center justify-center hover:bg-morocco-mint hover:text-morocco-blue transition-all shadow-[2px_2px_0px_0px_rgba(0,56,168,1)]"
           >
             <Plus className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Hover Overlay */}
-        <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-morocco-blue/80 to-transparent">
+        {/* Hover Overlay - Hidden on mobile for better UX */}
+        <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full lg:group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-morocco-blue/80 to-transparent hidden lg:block">
           <button className="w-full bg-white text-morocco-blue py-3 font-display font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:bg-morocco-fuchsia hover:text-white transition-all">
             Voir le Produit
             <ArrowRight className="w-4 h-4" />

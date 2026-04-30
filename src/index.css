@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@400;600;700;900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
 
   --color-morocco-blue: #0038A8;
   --color-morocco-fuchsia: #FF00FF;
   --color-morocco-saffron: #F4C430;
   --color-morocco-mint: #98FF98;
-  --color-morocco-tangerine: #FF8C00;
-  --color-morocco-terracotta: #E2725B;
-  --color-morocco-sand: #F4E1D2;
-  --color-morocco-gold: #D4AF37;
-  --color-morocco-olive: #808000;
+  --color-morocco-sand: #FAF4EB;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
   body {
-    @apply bg-white text-morocco-blue font-sans selection:bg-morocco-fuchsia selection:text-white;
+    @apply bg-white text-morocco-blue font-sans selection:bg-morocco-fuchsia selection:text-white overflow-x-hidden;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -30,54 +30,33 @@
 
 @layer components {
   .pop-card {
-    @apply bg-white border-4 border-morocco-blue rounded-none shadow-[8px_8px_0px_0px_rgba(0,56,168,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(0,56,168,1)];
+    @apply bg-white border-4 border-morocco-blue rounded-none shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,56,168,1)];
   }
 
   .pop-button-blue {
-    @apply inline-flex items-center justify-center px-8 py-4 font-display font-black uppercase tracking-widest text-sm border-4 border-morocco-blue transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none bg-morocco-blue text-white shadow-[8px_8px_0px_0px_rgba(255,0,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(255,0,255,1)];
+    @apply inline-flex items-center justify-center px-8 py-4 font-display font-black uppercase tracking-widest text-sm border-4 border-morocco-blue transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none bg-morocco-blue text-white shadow-[4px_4px_0px_0px_rgba(255,0,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(255,0,255,1)];
   }
 
   .pop-button-fuchsia {
-    @apply inline-flex items-center justify-center px-8 py-4 font-display font-black uppercase tracking-widest text-sm border-4 border-morocco-blue transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none bg-morocco-fuchsia text-white shadow-[8px_8px_0px_0px_rgba(0,56,168,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(0,56,168,1)];
-  }
-
-  .pop-button-outline {
-    @apply inline-flex items-center justify-center px-8 py-4 font-display font-black uppercase tracking-widest text-sm border-4 border-morocco-blue transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none bg-white text-morocco-blue shadow-[8px_8px_0px_0px_rgba(255,0,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(255,0,255,1)];
+    @apply inline-flex items-center justify-center px-8 py-4 font-display font-black uppercase tracking-widest text-sm border-4 border-morocco-blue transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none bg-morocco-fuchsia text-white shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,56,168,1)];
   }
 
   .glass-effect {
-    @apply bg-white/80 backdrop-blur-md border-b border-white/20;
+    @apply bg-white/90 backdrop-blur-md border-b-2 border-morocco-blue/5;
   }
 
   .zellige-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30-30-30z' fill='%230038A8' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='%230038A8' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
   }
 
   .neon-text {
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+    text-shadow: 2px 2px 0px rgba(0, 56, 168, 1);
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar for better UX */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-morocco-sand;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-morocco-blue border-2 border-morocco-sand;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-morocco-fuchsia;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {

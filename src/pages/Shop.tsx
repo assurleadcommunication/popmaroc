@@ -38,14 +38,14 @@ export default function Shop() {
   }, [searchQuery, selectedCategory, sortBy, priceRange]);
 
   return (
-    <div className="pt-32 pb-24 bg-morocco-sand/20">
+    <div className="pt-24 md:pt-32 pb-24 bg-morocco-sand/20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="mb-16 space-y-8">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-8">
-            <div className="space-y-4">
-              <span className="text-morocco-fuchsia font-black uppercase tracking-[0.3em] text-xs">La Boutique Pop</span>
-              <h1 className="text-6xl md:text-8xl font-display font-black text-morocco-blue uppercase tracking-tighter leading-none">
+        <div className="mb-12 md:mb-16 space-y-8">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+            <div className="space-y-2 md:space-y-4 text-center md:text-left">
+              <span className="text-morocco-fuchsia font-black uppercase tracking-[0.3em] text-[10px] md:text-xs">La Boutique Pop</span>
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-display font-black text-morocco-blue uppercase tracking-tighter leading-none">
                 Notre <br />
                 <span className="text-morocco-fuchsia neon-text">Catalogue</span>
               </h1>
@@ -56,26 +56,29 @@ export default function Shop() {
               <input 
                 type="text" 
                 placeholder="Chercher un trésor..." 
+                aria-label="Rechercher un produit"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white border-4 border-morocco-blue px-16 py-5 font-bold uppercase tracking-widest text-xs focus:outline-none focus:bg-morocco-mint/10 shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] focus:shadow-[8px_8px_0px_0px_rgba(255,0,255,1)] transition-all"
+                className="w-full bg-white border-4 border-morocco-blue px-16 py-4 md:py-5 font-bold uppercase tracking-widest text-[10px] md:text-xs focus:outline-none focus:bg-morocco-mint/10 shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] focus:shadow-[8px_8px_0px_0px_rgba(255,0,255,1)] transition-all"
               />
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 pt-8 border-t-4 border-morocco-blue/10">
-            {CATEGORIES.map(cat => (
-              <button 
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={`px-8 py-3 font-display font-black uppercase tracking-widest text-xs border-4 border-morocco-blue transition-all ${selectedCategory === cat.id ? 'bg-morocco-fuchsia text-white shadow-[4px_4px_0px_0px_rgba(0,56,168,1)]' : 'bg-white text-morocco-blue hover:bg-morocco-sand'}`}
-              >
-                {cat.name}
-              </button>
-            ))}
+          <div className="flex items-center gap-4 pt-8 border-t-2 md:border-t-4 border-morocco-blue/10 overflow-x-auto no-scrollbar pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+            <div className="flex items-center gap-4">
+              {CATEGORIES.map(cat => (
+                <button 
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`px-6 md:px-8 py-2 md:py-3 font-display font-black uppercase tracking-widest text-[10px] md:text-xs border-2 md:border-4 border-morocco-blue transition-all whitespace-nowrap ${selectedCategory === cat.id ? 'bg-morocco-fuchsia text-white shadow-[4px_4px_0px_0px_rgba(0,56,168,1)]' : 'bg-white text-morocco-blue hover:bg-morocco-sand'}`}
+                >
+                  {cat.name}
+                </button>
+              ))}
+            </div>
             <button 
               onClick={() => setIsFilterOpen(true)}
-              className="ml-auto flex items-center gap-2 px-8 py-3 font-display font-black uppercase tracking-widest text-xs border-4 border-morocco-blue bg-morocco-mint text-morocco-blue shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,56,168,1)] transition-all"
+              className="ml-auto flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 font-display font-black uppercase tracking-widest text-[10px] md:text-xs border-2 md:border-4 border-morocco-blue bg-morocco-mint text-morocco-blue shadow-[4px_4px_0px_0px_rgba(0,56,168,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,56,168,1)] transition-all whitespace-nowrap"
             >
               <SlidersHorizontal className="w-4 h-4" />
               Filtres
@@ -84,7 +87,7 @@ export default function Shop() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12">
           <AnimatePresence mode="popLayout">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />

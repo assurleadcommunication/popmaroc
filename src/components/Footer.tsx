@@ -125,7 +125,7 @@ export default function Footer() {
               <Heart className="w-4 h-4 text-morocco-fuchsia fill-current" />
               <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Designé au Maroc</span>
             </div>
-            <div className="flex gap-4 opacity-30 grayscale brightness-200">
+            <div className="flex gap-4">
               <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-4" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-6" />
             </div>

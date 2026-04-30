@@ -30,6 +30,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <button 
             onClick={() => setIsMenuOpen(true)}
+            aria-label="Ouvrir le menu"
             className="p-2 hover:bg-morocco-sand rounded-full md:hidden border-2 border-transparent hover:border-morocco-blue transition-all"
           >
             <Menu className="w-6 h-6" />
@@ -50,7 +51,10 @@ export default function Header() {
 
         <div className="flex items-center gap-2 md:gap-4">
           <div className="relative group hidden sm:block">
-            <button className="p-2 hover:bg-morocco-sand rounded-full flex items-center gap-1 border-2 border-transparent hover:border-morocco-blue transition-all">
+            <button 
+              aria-label="Changer de langue"
+              className="p-2 hover:bg-morocco-sand rounded-full flex items-center gap-1 border-2 border-transparent hover:border-morocco-blue transition-all"
+            >
               <Globe className="w-5 h-5" />
               <span className="text-[10px] font-extrabold uppercase">{language}</span>
             </button>
@@ -61,16 +65,23 @@ export default function Header() {
             </div>
           </div>
           
-          <button className="p-2 hover:bg-morocco-sand rounded-full border-2 border-transparent hover:border-morocco-blue transition-all">
+          <button 
+            aria-label="Rechercher"
+            className="p-2 hover:bg-morocco-sand rounded-full border-2 border-transparent hover:border-morocco-blue transition-all"
+          >
             <Search className="w-5 h-5" />
           </button>
 
-          <button className="p-2 hover:bg-morocco-sand rounded-full border-2 border-transparent hover:border-morocco-blue transition-all hidden sm:block">
+          <button 
+            aria-label="Mon compte"
+            className="p-2 hover:bg-morocco-sand rounded-full border-2 border-transparent hover:border-morocco-blue transition-all hidden sm:block"
+          >
             <User className="w-5 h-5" />
           </button>
           
           <button 
             onClick={() => setIsCartOpen(true)}
+            aria-label={`Voir le panier (${cartCount} articles)`}
             className="p-2 bg-morocco-blue text-white rounded-none shadow-[4px_4px_0px_0px_rgba(255,0,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(255,0,255,1)] transition-all relative"
           >
             <ShoppingBag className="w-5 h-5" />
@@ -107,6 +118,7 @@ export default function Header() {
                 </Link>
                 <button 
                   onClick={() => setIsMenuOpen(false)}
+                  aria-label="Fermer le menu"
                   className="p-2 bg-morocco-blue text-white"
                 >
                   <X className="w-6 h-6" />

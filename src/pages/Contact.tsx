@@ -112,7 +112,7 @@ export default function Contact() {
           <img 
             src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80&w=1920" 
             alt="Casablanca Map Placeholder" 
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+            className="w-full h-full object-cover transition-all duration-1000"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-morocco-blue/20 flex items-center justify-center">
