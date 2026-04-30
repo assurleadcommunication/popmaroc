@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     name: "Sac Babouche Pop",
     category: "leather",
     price: 850,
-    image: "Capture d’écran 2026-04-29 225022.jpg",
+    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800",
     description: "Un sac en cuir traditionnel réinterprété avec des couleurs vives et des motifs pop.",
     rating: 4.8,
     reviews: 124,
@@ -83,7 +83,7 @@ export const PRODUCTS: Product[] = [
     name: "Pouf en Cuir Majorelle",
     category: "decor",
     price: 650,
-    image: "ChatGPT Image 29 avr. 2026, 22_49_12.png",
+    image: "https://images.unsplash.com/photo-1512418490979-92798ccc1380?auto=format&fit=crop&q=80&w=800",
     description: "Pouf en cuir véritable teinté au bleu Majorelle emblématique.",
     rating: 4.6,
     reviews: 78,
@@ -103,20 +103,6 @@ export const PRODUCTS: Product[] = [
     stock: 5,
     colors: ["#D4AF37", "#FF00FF"],
     sizes: ["S", "M", "L"]
-  },
-  {
-    id: 7,
-    name: "Petit Sac Croco Chic",
-    category: "leather",
-    price: 140,
-    image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&q=80&w=800",
-    description: "L'élégance et la praticité réunies dans ce petit sac à texture crocodile blanche. Un accessoire chic avec finitions soignées et fermeture sécurisée pour un look raffiné au quotidien.",
-    rating: 4.8,
-    reviews: 56,
-    stock: 25,
-    colors: ["#FFFFFF"],
-    sizes: ["Taille Unique"],
-    isNew: true
   },
 ];
 
