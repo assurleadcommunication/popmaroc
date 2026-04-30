@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: "Tajine Zellige Fluo",
     category: "ceramics",
     price: 450,
-    image: "https://images.unsplash.com/photo-1590732488572-cf3252b17427?auto=format&fit=crop&q=80&w=800",
+    image: "212ee40d-9820-4682-9901-0489e5e10968.png",
     description: "Tajine décoratif avec motifs zellige en couleurs néon. Pièce unique faite main.",
     rating: 4.9,
     reviews: 89,
