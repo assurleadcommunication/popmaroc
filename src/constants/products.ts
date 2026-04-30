@@ -34,7 +34,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: 124,
     stock: 15,
-    colors: ["#0038A8", "#FF00FF", "#F4C430"],
+    colors: [""],
     sizes: ["S", "M", "L"],
     isNew: true
   },
